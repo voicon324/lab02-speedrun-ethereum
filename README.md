@@ -50,8 +50,6 @@ The challenges are currently configured for **Sepolia**. To run them locally:
 1.  Open `packages/nextjs/scaffold.config.ts` in the challenge folder.
 2.  Change `targetNetworks` from `[chains.sepolia]` to `[chains.hardhat]`.
     ```typescript
-    // packages/nextjs/scaffold.config.ts
-    // targetNetworks: [chains.sepolia], 
     targetNetworks: [chains.hardhat], 
     ```
 3.  Restart your frontend (`yarn start`).
