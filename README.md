@@ -3,7 +3,8 @@
 - **Name**: Ho Khanh Duy
 - **ID**: 22120076
 
-## Challenges### Included Challenges
+## Challenges
+### Included Challenges
 1.  **Challenge 1: Decentralized Staking App**
     - Directory: `challenge-decentralized-staking`
 2.  **Challenge 2: Token Vendor**
@@ -47,10 +48,10 @@ For each challenge, navigate to its directory and follow these steps:
 The challenges are currently configured for **Sepolia**. To run them locally:
 
 1.  Open `packages/nextjs/scaffold.config.ts` in the challenge folder.
-2.  Change `targetNetworks` from `[chains.sepolia]` to `[chains.foundry]` (or `[chains.hardhat]`).
+2.  Change `targetNetworks` from `[chains.sepolia]` to `[chains.hardhat]`.
     ```typescript
     // packages/nextjs/scaffold.config.ts
     // targetNetworks: [chains.sepolia], 
-    targetNetworks: [chains.foundry], 
+    targetNetworks: [chains.hardhat], 
     ```
 3.  Restart your frontend (`yarn start`).
