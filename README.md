@@ -42,3 +42,15 @@ For each challenge, navigate to its directory and follow these steps:
     ```
 
 5.  Open your browser at `http://localhost:3000`.
+
+## Switching to Local Network
+The challenges are currently configured for **Sepolia**. To run them locally:
+
+1.  Open `packages/nextjs/scaffold.config.ts` in the challenge folder.
+2.  Change `targetNetworks` from `[chains.sepolia]` to `[chains.foundry]` (or `[chains.hardhat]`).
+    ```typescript
+    // packages/nextjs/scaffold.config.ts
+    // targetNetworks: [chains.sepolia], 
+    targetNetworks: [chains.foundry], 
+    ```
+3.  Restart your frontend (`yarn start`).
